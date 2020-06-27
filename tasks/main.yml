@@ -1,0 +1,58 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: look for install
+  become: yes
+  stat:
+    path: '{{ concourse_install_dir }}'
+  changed_when: False
+  register: concourse_binary
+- when: not concourse_binary.stat.exists
+  block:
+    - name: download...
+      become: yes
+      become_user: root
+      get_url:
+        url: '{{ concourse_url }}'
+        dest: /tmp/{{ concourse_archive }}
+        mode: 0644
+        checksum: '{{ concourse_checksum }}'
+    - name: mkdir....
+      become: yes
+      become_user: root
+      file:
+        path: '{{ concourse_install_dir }}'
+        state: directory
+        mode: 0755
+    - name: unarchive..
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: /tmp/{{ concourse_archive }}
+        dest: '{{ concourse_install_dir }}'
+        creates: '{{ concourse_install_bin_dir }}'
+  always:
+    - name: cleanup
+      become: yes
+      become_user: root
+      file:
+        path: /tmp/{{ concourse_archive }}
+        state: absent
+- name: link...
+  become: yes
+  become_user: root
+  with_items: '{{ concourse_install_exes }}'
+  file:
+    src: '{{ concourse_install_bin_dir }}/{{ item }}'
+    dest: '{{ concourse_parent_install_dir }}/bin/{{ item }}'
+    state: link
+
