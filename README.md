@@ -25,7 +25,7 @@ Example Playbook
 ```yml
 - hosts: servers
   roles:
-    - andrewrothstein.concourse
+    - role: andrewrothstein.concourse
 ```
 
 License
