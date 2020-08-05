@@ -6,5 +6,7 @@ concourse_url: '{{ concourse_mirror }}/v{{ concourse_ver }}/{{ concourse_archive
 concourse_checksum: '{{ concourse_checksums[concourse_ver][concourse_platform] }}'
 concourse_install_dir: '{{ concourse_parent_install_dir }}/concourse-{{ concourse_ver }}'
 concourse_install_bin_dir: '{{ concourse_install_dir }}/concourse/bin'
+concourse_fly_tgz: '{{ concourse_install_dir }}/concourse/fly-assets/fly-{{ concourse_platform }}.tgz'
 concourse_install_exes:
   - concourse
+  - fly

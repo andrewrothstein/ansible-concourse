@@ -32,7 +32,7 @@
         path: '{{ concourse_install_dir }}'
         state: directory
         mode: 0755
-    - name: unarchive..
+    - name: unarchive /tmp/{{ concourse_archive}}...
       become: yes
       become_user: root
       unarchive:
@@ -40,6 +40,14 @@
         src: /tmp/{{ concourse_archive }}
         dest: '{{ concourse_install_dir }}'
         creates: '{{ concourse_install_bin_dir }}'
+    - name: unarchive {{ concourse_fly_tgz }}...
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: '{{ concourse_fly_tgz }}'
+        dest: '{{ concourse_install_bin_dir }}'
+        creates: '{{ concourse_install_bin_dir }}/fly'
   always:
     - name: cleanup
       become: yes
