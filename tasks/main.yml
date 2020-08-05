@@ -63,4 +63,3 @@
     src: '{{ concourse_install_bin_dir }}/{{ item }}'
     dest: '{{ concourse_parent_install_dir }}/bin/{{ item }}'
     state: link
-
