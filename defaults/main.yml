@@ -7,6 +7,13 @@ concourse_arch: amd64
 concourse_archive_type: tgz
 concourse_parent_install_dir: /usr/local
 concourse_checksums:
+  '5.5.11'
+    # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:b7ea48cdd9d06f97af939e55c4894a1902f70697
+    # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-linux-amd64.tgz.sha1
+    linux-amd64: sha1:6208d11969b894487a25bc6dc62e3d5c5ba54dce
+    # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-windows-amd64.zip.sha1
+    windows-amd64: sha1:1b5714af91b61cb7e9156399306678dc30a99828
   '6.3.0':
     # https://github.com/concourse/concourse/releases/download/v6.3.0/concourse-6.3.0-darwin-amd64.tgz.sha1
     darwin-amd64: sha1:59b8d20b028961af34ef9c55bddcef1845d4410f
