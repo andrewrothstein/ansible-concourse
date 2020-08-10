@@ -7,7 +7,7 @@ concourse_arch: amd64
 concourse_archive_type: tgz
 concourse_parent_install_dir: /usr/local
 concourse_checksums:
-  '5.5.11'
+  '5.5.11':
     # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-darwin-amd64.tgz.sha1
     darwin-amd64: sha1:b7ea48cdd9d06f97af939e55c4894a1902f70697
     # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-linux-amd64.tgz.sha1
