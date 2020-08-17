@@ -32,7 +32,7 @@
         path: '{{ concourse_install_dir }}'
         state: directory
         mode: 0755
-    - name: unarchive /tmp/{{ concourse_archive}}...
+    - name: unarchive /tmp/{{ concourse_archive }}...
       become: yes
       become_user: root
       unarchive:
