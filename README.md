@@ -1,6 +1,6 @@
 andrewrothstein.concourse
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-concourse.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-concourse)
+![Build Status](https://github.com/andrewrothstein/ansible-concourse/actions/workflows/build.yml/badge.svg)
 
 Installs [concourse](https://concourse-ci.org/).
 
