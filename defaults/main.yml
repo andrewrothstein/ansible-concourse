@@ -42,6 +42,41 @@ concourse_checksums:
     linux-amd64: sha1:b21527dad93d374e2395e36784197c18095f3628
     # https://github.com/concourse/concourse/releases/download/v6.7.3/concourse-6.7.3-windows-amd64.zip.sha1
     windows-amd64: sha1:634d5165ed344685038740652a162c500a849e0f
+  '6.7.4':
+    # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:487915ddfa0da760d2262167775e007e9c362315
+    # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-linux-amd64.tgz.sha1
+    linux-amd64: sha1:7888478cf79252681f99752c3149f50de35a7113
+    # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-windows-amd64.zip.sha1
+    windows-amd64: sha1:e749808a031c59888eb53cf23dfc7972332742ac
+  '6.7.5':
+    # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:18520dfc59ef6e4f22ff25728489f97a03a0c58c
+    # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-linux-amd64.tgz.sha1
+    linux-amd64: sha1:7cfbf75046af37ea7f27135d33362c57d0d8c37c
+    # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-windows-amd64.zip.sha1
+    windows-amd64: sha1:d81d097ceb7651159f5d761190d7448ca8b5c8e1
+  '6.7.6':
+    # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:b3a6a3ef741577526df3a1bb81c57b1c6559e6e9
+    # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-linux-amd64.tgz.sha1
+    linux-amd64: sha1:b36ff8d3872da8a4964cc6e48798c41af22c4fb5
+    # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-windows-amd64.zip.sha1
+    windows-amd64: sha1:358a313fbb3827231253432cf0a3689d86f9be66
+  '6.7.7':
+    # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:7ba1b1e4618e6bc518273a615f80bae817b407b0
+    # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-linux-amd64.tgz.sha1
+    linux-amd64: sha1:c65b63de710b4db4f195a48311cc8d23ae9feafd
+    # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-windows-amd64.zip.sha1
+    windows-amd64: sha1:6610da7844dbbfec8bd81f09897394915818f4b6
+  '6.7.8':
+    # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:4beedf3b07947b48a43a083d0ee69b285a7f1c34
+    # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-linux-amd64.tgz.sha1
+    linux-amd64: sha1:d2ae25d38ac495ed00030b96f8d5f7eb2acf04fa
+    # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-windows-amd64.zip.sha1
+    windows-amd64: sha1:0a8c6c05ea94d25ec22f834ba1f06a2062aed388
   '7.3.1':
     # https://github.com/concourse/concourse/releases/download/v7.3.1/concourse-7.3.1-darwin-amd64.tgz.sha1
     darwin-amd64: sha1:576149f37156f08f8150dd1ec4d0c66f1f88e46a
@@ -49,6 +84,20 @@ concourse_checksums:
     linux-amd64: sha1:a7142525327abffbbf35bf074af6f8d4ce9f922e
     # https://github.com/concourse/concourse/releases/download/v7.3.1/concourse-7.3.1-windows-amd64.zip.sha1
     windows-amd64: sha1:0312286f67de4fcc8950f25de548141475def508
+  '7.4.0':
+    # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:96d610614599a7bf8da48faa8722d3e5f92003d8
+    # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-linux-amd64.tgz.sha1
+    linux-amd64: sha1:833a72e8f2611c91028cc8b3b05f2925752d4fe3
+    # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-windows-amd64.zip.sha1
+    windows-amd64: sha1:7076334e6161a5c6c5bc6c167ff253c379791e72
+  '7.4.1':
+    # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:d90bd9c78561fc32eda566d221f636571d4bdbaa
+    # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-linux-amd64.tgz.sha1
+    linux-amd64: sha1:819cd43902c07ae2da6bed4eb07953438f910231
+    # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-windows-amd64.zip.sha1
+    windows-amd64: sha1:80b1f598423ac43ae3872a26bb9d836ff958cb14
   '7.4.2':
     # https://github.com/concourse/concourse/releases/download/v7.4.2/concourse-7.4.2-darwin-amd64.tgz.sha1
     darwin-amd64: sha1:85718af62486675ce002bcf247a23719ea4fc104
@@ -56,6 +105,20 @@ concourse_checksums:
     linux-amd64: sha1:791a7115c46406cc396c6ba83082bc8593f7a04d
     # https://github.com/concourse/concourse/releases/download/v7.4.2/concourse-7.4.2-windows-amd64.zip.sha1
     windows-amd64: sha1:b650457fa950b7f7294a70dfb2e90562a5cbeb1c
+  '7.4.3':
+    # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:45ae23f45916339ed70cfe12cdf373312a9d6275
+    # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-linux-amd64.tgz.sha1
+    linux-amd64: sha1:2839c15ca492e0f78de4dc064d93672f90c254b3
+    # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-windows-amd64.zip.sha1
+    windows-amd64: sha1:dd4761aba1ae20948e1e71a70eb71396aca36806
+  '7.5.0':
+    # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:de05cef2e745ab9e6fc7e60b87d7e66cd738f003
+    # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-linux-amd64.tgz.sha1
+    linux-amd64: sha1:fd8712f91d6029765cb5984d771544f876c8ba0c
+    # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-windows-amd64.zip.sha1
+    windows-amd64: sha1:3bb9c0a98bb25d0f22c1e2243992b09ee4b23314
   '7.6.0':
     # https://github.com/concourse/concourse/releases/download/v7.6.0/concourse-7.6.0-darwin-amd64.tgz.sha1
     darwin-amd64: sha1:6a953e5855bfa171a2c1f1ffaa3a8ebfb3759598
