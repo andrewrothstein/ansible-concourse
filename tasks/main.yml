@@ -10,15 +10,15 @@
       paths:
         - '{{ role_path }}/vars'
 - name: look for install in {{ concourse_install_dir }}
-  become: yes
+  become: true
   stat:
     path: '{{ concourse_install_dir }}'
-  changed_when: False
+  changed_when: false
   register: concourse_binary
 - when: not concourse_binary.stat.exists
   block:
     - name: downloading {{ concourse_url }} to {{ concourse_tmp_archive }}
-      become: yes
+      become: true
       become_user: root
       get_url:
         url: '{{ concourse_url }}'
@@ -26,37 +26,37 @@
         mode: 0644
         checksum: '{{ concourse_checksum }}'
     - name: mkdir {{ concourse_tmp_archive }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ concourse_install_dir }}'
         state: directory
         mode: 0755
     - name: unarchiving {{ concourse_tmp_archive }}...
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ concourse_tmp_archive }}'
         dest: '{{ concourse_install_dir }}'
         creates: '{{ concourse_install_bin_dir }}'
     - name: unarchive {{ concourse_fly_tgz }}...
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ concourse_fly_tgz }}'
         dest: '{{ concourse_install_bin_dir }}'
         creates: '{{ concourse_install_bin_dir }}/fly'
   always:
     - name: rm {{ concourse_tmp_archive }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ concourse_tmp_archive }}'
         state: absent
 - name: link binaries in {{ concourse_install_bin_dir }} to {{ concourse_parent_install_dir }}/bin
-  become: yes
+  become: true
   become_user: root
   with_items: '{{ concourse_install_exes }}'
   file:
