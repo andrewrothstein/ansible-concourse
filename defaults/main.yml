@@ -1,6 +1,6 @@
 ---
 # defaults file for concourse
-concourse_ver: 7.7.0
+concourse_ver: 7.7.1
 concourse_mirror: https://github.com/concourse/concourse/releases/download
 concourse_os: linux
 concourse_arch: amd64
@@ -133,3 +133,10 @@ concourse_checksums:
     linux-amd64: sha1:f043d3c5fc1ac8236620eb3a3066076967c96a56
     # https://github.com/concourse/concourse/releases/download/v7.7.0/concourse-7.7.0-windows-amd64.zip.sha1
     windows-amd64: sha1:f7a479476bd12b073ffd8d949d326107691ec927
+  '7.7.1':
+    # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-darwin-amd64.tgz.sha1
+    darwin-amd64: sha1:f4b9b0fb461940a7046fb3eedb25bc159a58ed0e
+    # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-linux-amd64.tgz.sha1
+    linux-amd64: sha1:bd91335c3780d667d5457c8c3525517e0a82940c
+    # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-windows-amd64.zip.sha1
+    windows-amd64: sha1:f1d0c220791384a693b124eedfa509be583b3c75
