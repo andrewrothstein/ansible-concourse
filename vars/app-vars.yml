@@ -1,0 +1,9 @@
+---
+# vars file for concourse
+concourse_platform: '{{ concourse_os }}-{{ concourse_arch }}'
+concourse_name: '{{ concourse_app }}-{{ concourse_ver }}-{{ concourse_platform }}'
+concourse_archive: '{{ concourse_name }}.{{ concourse_archive_type | default("tgz") }}'
+concourse_tmp_archive: /tmp/{{ concourse_archive }}
+concourse_url: '{{ concourse_mirror }}/v{{ concourse_ver }}/{{ concourse_archive }}'
+concourse_checksum: '{{ concourse_checksums[concourse_ver][concourse_app][concourse_platform] }}'
+concourse_install_dir: '{{ concourse_parent_install_dir }}/{{ concourse_name }}'

@@ -1,0 +1,6 @@
+---
+- command: /usr/local/bin/concourse --version
+  register: concourse_test_output
+- name: concourse --version
+  debug:
+    msg: '{{ concourse_test_output.stdout }}'

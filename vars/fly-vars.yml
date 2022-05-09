@@ -1,0 +1,3 @@
+---
+concourse_install_bin_dir: '{{ concourse_install_dir }}'
+concourse_unarchive_creates: '{{ concourse_install_dir }}/fly'

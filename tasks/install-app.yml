@@ -1,0 +1,48 @@
+---
+- include_vars: app-vars.yml
+- include_vars: '{{ concourse_app }}-vars.yml'
+- name: look for install in {{ concourse_install_dir }}
+  become: true
+  stat:
+    path: '{{ concourse_install_dir }}'
+  changed_when: false
+  register: concourse_binary
+- when: not concourse_binary.stat.exists
+  block:
+    - name: downloading {{ concourse_url }} to {{ concourse_tmp_archive }}
+      become: true
+      become_user: root
+      get_url:
+        url: '{{ concourse_url }}'
+        dest: '{{ concourse_tmp_archive }}'
+        mode: 0644
+        checksum: '{{ concourse_checksum }}'
+    - name: mkdir {{ concourse_install_dir }}
+      become: true
+      become_user: root
+      file:
+        path: '{{ concourse_install_dir }}'
+        state: directory
+        mode: 0755
+    - name: unarchiving {{ concourse_tmp_archive }}...
+      become: true
+      become_user: root
+      unarchive:
+        remote_src: true
+        src: '{{ concourse_tmp_archive }}'
+        dest: '{{ concourse_install_dir }}'
+        creates: '{{ concourse_unarchive_creates }}'
+  always:
+    - name: rm {{ concourse_tmp_archive }}
+      become: true
+      become_user: root
+      file:
+        path: '{{ concourse_tmp_archive }}'
+        state: absent
+- name: linking installed binaries in {{ concourse_install_bin_dir }} to {{ concourse_parent_install_dir }}/bin
+  become: true
+  become_user: root
+  file:
+    src: '{{ concourse_install_bin_dir }}/{{ concourse_app }}'
+    dest: '{{ concourse_parent_install_dir }}/bin/{{ concourse_app }}'
+    state: link
