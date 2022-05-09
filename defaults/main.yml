@@ -4,139 +4,294 @@ concourse_ver: 7.7.1
 concourse_mirror: https://github.com/concourse/concourse/releases/download
 concourse_os: linux
 concourse_arch: amd64
-concourse_archive_type: tgz
+concourse_apps:
+  - concourse
+  - fly
 concourse_parent_install_dir: /usr/local
+
 concourse_checksums:
   '5.5.11':
-    # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:b7ea48cdd9d06f97af939e55c4894a1902f70697
-    # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-linux-amd64.tgz.sha1
-    linux-amd64: sha1:6208d11969b894487a25bc6dc62e3d5c5ba54dce
-    # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-windows-amd64.zip.sha1
-    windows-amd64: sha1:1b5714af91b61cb7e9156399306678dc30a99828
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:b7ea48cdd9d06f97af939e55c4894a1902f70697
+      # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-linux-amd64.tgz.sha1
+      linux-amd64: sha1:6208d11969b894487a25bc6dc62e3d5c5ba54dce
+      # https://github.com/concourse/concourse/releases/download/v5.5.11/concourse-5.5.11-windows-amd64.zip.sha1
+      windows-amd64: sha1:1b5714af91b61cb7e9156399306678dc30a99828
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v5.5.11/fly-5.5.11-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:a1c54a326223cbb4474345a793ed22e6682bb9dd
+      # https://github.com/concourse/concourse/releases/download/v5.5.11/fly-5.5.11-linux-amd64.tgz.sha1
+      linux-amd64: sha1:87a216f69665b36be57091f640205a6d5c7440ab
+      # https://github.com/concourse/concourse/releases/download/v5.5.11/fly-5.5.11-windows-amd64.zip.sha1
+      windows-amd64: sha1:0e5e405b6824698fbb70b8f1d4e53981bd0d635c
   '6.3.0':
-    # https://github.com/concourse/concourse/releases/download/v6.3.0/concourse-6.3.0-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:59b8d20b028961af34ef9c55bddcef1845d4410f
-    # https://github.com/concourse/concourse/releases/download/v6.3.0/concourse-6.3.0-linux-amd64.tgz.sha1
-    linux-amd64: sha1:55e62b8c603250a460a568d9f96d6e5c06a6f4b1
-    # https://github.com/concourse/concourse/releases/download/v6.3.0/concourse-6.3.0-windows-amd64.zip.sha1
-    windows-amd64: sha1:8792d787295fd2ae7d7dc7250bceb7ce0dd2b71d
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.3.0/concourse-6.3.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:59b8d20b028961af34ef9c55bddcef1845d4410f
+      # https://github.com/concourse/concourse/releases/download/v6.3.0/concourse-6.3.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:55e62b8c603250a460a568d9f96d6e5c06a6f4b1
+      # https://github.com/concourse/concourse/releases/download/v6.3.0/concourse-6.3.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:8792d787295fd2ae7d7dc7250bceb7ce0dd2b71d
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.3.0/fly-6.3.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:7cff8cbe73938a2fcae161df10f0085268d4b3ae
+      # https://github.com/concourse/concourse/releases/download/v6.3.0/fly-6.3.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:0877580e40db09c1a3e9bdd382078f308dc07433
+      # https://github.com/concourse/concourse/releases/download/v6.3.0/fly-6.3.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:35aaebce930fe925a580c74f5bd4c173c22e9b38
   '6.4.1':
-    # https://github.com/concourse/concourse/releases/download/v6.4.1/concourse-6.4.1-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:598f6ecf20e1fcf43cbcc3d71280c151567d5d79
-    # https://github.com/concourse/concourse/releases/download/v6.4.1/concourse-6.4.1-linux-amd64.tgz.sha1
-    linux-amd64: sha1:6a95c8b12dfe1c11f532581b65be463640cdc22b
-    # https://github.com/concourse/concourse/releases/download/v6.4.1/concourse-6.4.1-windows-amd64.zip.sha1
-    windows-amd64: sha1:5cff904502bc7bbfce83896bc73decb797ebc65b
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.4.1/concourse-6.4.1-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:598f6ecf20e1fcf43cbcc3d71280c151567d5d79
+      # https://github.com/concourse/concourse/releases/download/v6.4.1/concourse-6.4.1-linux-amd64.tgz.sha1
+      linux-amd64: sha1:6a95c8b12dfe1c11f532581b65be463640cdc22b
+      # https://github.com/concourse/concourse/releases/download/v6.4.1/concourse-6.4.1-windows-amd64.zip.sha1
+      windows-amd64: sha1:5cff904502bc7bbfce83896bc73decb797ebc65b
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.4.1/fly-6.4.1-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:cfaac55bf775e67b670ff53f615d170243222171
+      # https://github.com/concourse/concourse/releases/download/v6.4.1/fly-6.4.1-linux-amd64.tgz.sha1
+      linux-amd64: sha1:561e575d6f1827a783ade8cd7152ed97aac9b46e
+      # https://github.com/concourse/concourse/releases/download/v6.4.1/fly-6.4.1-windows-amd64.zip.sha1
+      windows-amd64: sha1:936f999163625f05d395817189109c9ed2538486
   '6.7.2':
-    # https://github.com/concourse/concourse/releases/download/v6.7.2/concourse-6.7.2-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:ca7ca3043124a2dbc231c80cb68218eab23eebc4
-    # https://github.com/concourse/concourse/releases/download/v6.7.2/concourse-6.7.2-linux-amd64.tgz.sha1
-    linux-amd64: sha1:95d7ec09601f9c8085d94d2055496a0164e5c54f
-    # https://github.com/concourse/concourse/releases/download/v6.7.2/concourse-6.7.2-windows-amd64.zip.sha1
-    windows-amd64: sha1:1acc10ede43c36cdaf0a44c42b3ec9dcbf311c0f
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.7.2/concourse-6.7.2-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:ca7ca3043124a2dbc231c80cb68218eab23eebc4
+      # https://github.com/concourse/concourse/releases/download/v6.7.2/concourse-6.7.2-linux-amd64.tgz.sha1
+      linux-amd64: sha1:95d7ec09601f9c8085d94d2055496a0164e5c54f
+      # https://github.com/concourse/concourse/releases/download/v6.7.2/concourse-6.7.2-windows-amd64.zip.sha1
+      windows-amd64: sha1:1acc10ede43c36cdaf0a44c42b3ec9dcbf311c0f
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.7.2/fly-6.7.2-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:6718df7fce0a1f888d3e69c5cf98dc46a1ea89bc
+      # https://github.com/concourse/concourse/releases/download/v6.7.2/fly-6.7.2-linux-amd64.tgz.sha1
+      linux-amd64: sha1:c06e7c1c02e3f9444f89e4c2cb1ce5787dcd08c9
+      # https://github.com/concourse/concourse/releases/download/v6.7.2/fly-6.7.2-windows-amd64.zip.sha1
+      windows-amd64: sha1:895e62f55c10f4f3ef1a43cd36100b691ef5bbb6
   '6.7.3':
-    # https://github.com/concourse/concourse/releases/download/v6.7.3/concourse-6.7.3-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:a4ec3cd24500a55a215389cd5a615440875cc870
-    # https://github.com/concourse/concourse/releases/download/v6.7.3/concourse-6.7.3-linux-amd64.tgz.sha1
-    linux-amd64: sha1:b21527dad93d374e2395e36784197c18095f3628
-    # https://github.com/concourse/concourse/releases/download/v6.7.3/concourse-6.7.3-windows-amd64.zip.sha1
-    windows-amd64: sha1:634d5165ed344685038740652a162c500a849e0f
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.7.3/concourse-6.7.3-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:a4ec3cd24500a55a215389cd5a615440875cc870
+      # https://github.com/concourse/concourse/releases/download/v6.7.3/concourse-6.7.3-linux-amd64.tgz.sha1
+      linux-amd64: sha1:b21527dad93d374e2395e36784197c18095f3628
+      # https://github.com/concourse/concourse/releases/download/v6.7.3/concourse-6.7.3-windows-amd64.zip.sha1
+      windows-amd64: sha1:634d5165ed344685038740652a162c500a849e0f
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.7.3/fly-6.7.3-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:bb4285a0f9202e3c008f12dbdcbeb80b2b2c8529
+      # https://github.com/concourse/concourse/releases/download/v6.7.3/fly-6.7.3-linux-amd64.tgz.sha1
+      linux-amd64: sha1:5f14540f9456cf55da8087387f9c26e2e7180f8d
+      # https://github.com/concourse/concourse/releases/download/v6.7.3/fly-6.7.3-windows-amd64.zip.sha1
+      windows-amd64: sha1:8a716f00fa14fa67f188f0826cde4e397b5ba40b
   '6.7.4':
-    # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:487915ddfa0da760d2262167775e007e9c362315
-    # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-linux-amd64.tgz.sha1
-    linux-amd64: sha1:7888478cf79252681f99752c3149f50de35a7113
-    # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-windows-amd64.zip.sha1
-    windows-amd64: sha1:e749808a031c59888eb53cf23dfc7972332742ac
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:487915ddfa0da760d2262167775e007e9c362315
+      # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-linux-amd64.tgz.sha1
+      linux-amd64: sha1:7888478cf79252681f99752c3149f50de35a7113
+      # https://github.com/concourse/concourse/releases/download/v6.7.4/concourse-6.7.4-windows-amd64.zip.sha1
+      windows-amd64: sha1:e749808a031c59888eb53cf23dfc7972332742ac
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.7.4/fly-6.7.4-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:cd6a8e8ece706b759c37c2390ebae88f9a9d211c
+      # https://github.com/concourse/concourse/releases/download/v6.7.4/fly-6.7.4-linux-amd64.tgz.sha1
+      linux-amd64: sha1:8c5b16cb5b7af8489adf547f61ccd8b532a94e7e
+      # https://github.com/concourse/concourse/releases/download/v6.7.4/fly-6.7.4-windows-amd64.zip.sha1
+      windows-amd64: sha1:16056fbd8858d6a2f945f03dc19d44318a7e7baf
   '6.7.5':
-    # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:18520dfc59ef6e4f22ff25728489f97a03a0c58c
-    # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-linux-amd64.tgz.sha1
-    linux-amd64: sha1:7cfbf75046af37ea7f27135d33362c57d0d8c37c
-    # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-windows-amd64.zip.sha1
-    windows-amd64: sha1:d81d097ceb7651159f5d761190d7448ca8b5c8e1
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:18520dfc59ef6e4f22ff25728489f97a03a0c58c
+      # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-linux-amd64.tgz.sha1
+      linux-amd64: sha1:7cfbf75046af37ea7f27135d33362c57d0d8c37c
+      # https://github.com/concourse/concourse/releases/download/v6.7.5/concourse-6.7.5-windows-amd64.zip.sha1
+      windows-amd64: sha1:d81d097ceb7651159f5d761190d7448ca8b5c8e1
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.7.5/fly-6.7.5-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:c1db8dafe14d1b426d4a0122b51af837837bdaf7
+      # https://github.com/concourse/concourse/releases/download/v6.7.5/fly-6.7.5-linux-amd64.tgz.sha1
+      linux-amd64: sha1:93f806c97bfdeb8787a328104391a6229b586af1
+      # https://github.com/concourse/concourse/releases/download/v6.7.5/fly-6.7.5-windows-amd64.zip.sha1
+      windows-amd64: sha1:f6ac09c62bea5e968427775c814556240d859314
   '6.7.6':
-    # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:b3a6a3ef741577526df3a1bb81c57b1c6559e6e9
-    # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-linux-amd64.tgz.sha1
-    linux-amd64: sha1:b36ff8d3872da8a4964cc6e48798c41af22c4fb5
-    # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-windows-amd64.zip.sha1
-    windows-amd64: sha1:358a313fbb3827231253432cf0a3689d86f9be66
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:b3a6a3ef741577526df3a1bb81c57b1c6559e6e9
+      # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-linux-amd64.tgz.sha1
+      linux-amd64: sha1:b36ff8d3872da8a4964cc6e48798c41af22c4fb5
+      # https://github.com/concourse/concourse/releases/download/v6.7.6/concourse-6.7.6-windows-amd64.zip.sha1
+      windows-amd64: sha1:358a313fbb3827231253432cf0a3689d86f9be66
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.7.6/fly-6.7.6-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:aa80c9416d7446150dc42287ab2cb756431e1505
+      # https://github.com/concourse/concourse/releases/download/v6.7.6/fly-6.7.6-linux-amd64.tgz.sha1
+      linux-amd64: sha1:86bf439313f7afb97d5f342865a5c9e8406e92be
+      # https://github.com/concourse/concourse/releases/download/v6.7.6/fly-6.7.6-windows-amd64.zip.sha1
+      windows-amd64: sha1:ee89b2ddf8ef09ca86a9cd132309ef1d646d953e
   '6.7.7':
-    # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:7ba1b1e4618e6bc518273a615f80bae817b407b0
-    # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-linux-amd64.tgz.sha1
-    linux-amd64: sha1:c65b63de710b4db4f195a48311cc8d23ae9feafd
-    # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-windows-amd64.zip.sha1
-    windows-amd64: sha1:6610da7844dbbfec8bd81f09897394915818f4b6
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:7ba1b1e4618e6bc518273a615f80bae817b407b0
+      # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-linux-amd64.tgz.sha1
+      linux-amd64: sha1:c65b63de710b4db4f195a48311cc8d23ae9feafd
+      # https://github.com/concourse/concourse/releases/download/v6.7.7/concourse-6.7.7-windows-amd64.zip.sha1
+      windows-amd64: sha1:6610da7844dbbfec8bd81f09897394915818f4b6
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.7.7/fly-6.7.7-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:633cb2064c3f4585caa3bfd6bc4442f0a0ec208d
+      # https://github.com/concourse/concourse/releases/download/v6.7.7/fly-6.7.7-linux-amd64.tgz.sha1
+      linux-amd64: sha1:e9876302392a75541ae6106efc09ea1f95c265b0
+      # https://github.com/concourse/concourse/releases/download/v6.7.7/fly-6.7.7-windows-amd64.zip.sha1
+      windows-amd64: sha1:03ec2eb4bc0dca071be7f80cb492b97fdb89ab90
   '6.7.8':
-    # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:4beedf3b07947b48a43a083d0ee69b285a7f1c34
-    # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-linux-amd64.tgz.sha1
-    linux-amd64: sha1:d2ae25d38ac495ed00030b96f8d5f7eb2acf04fa
-    # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-windows-amd64.zip.sha1
-    windows-amd64: sha1:0a8c6c05ea94d25ec22f834ba1f06a2062aed388
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:4beedf3b07947b48a43a083d0ee69b285a7f1c34
+      # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-linux-amd64.tgz.sha1
+      linux-amd64: sha1:d2ae25d38ac495ed00030b96f8d5f7eb2acf04fa
+      # https://github.com/concourse/concourse/releases/download/v6.7.8/concourse-6.7.8-windows-amd64.zip.sha1
+      windows-amd64: sha1:0a8c6c05ea94d25ec22f834ba1f06a2062aed388
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v6.7.8/fly-6.7.8-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:745ffa8c17938f1d4dc6681c9aea0b0d454f363a
+      # https://github.com/concourse/concourse/releases/download/v6.7.8/fly-6.7.8-linux-amd64.tgz.sha1
+      linux-amd64: sha1:688cfbba3f25ae5f1e2cc34c4524e2795c125062
+      # https://github.com/concourse/concourse/releases/download/v6.7.8/fly-6.7.8-windows-amd64.zip.sha1
+      windows-amd64: sha1:765986fbfab8007edd5088faf233cecdbd439350
   '7.3.1':
-    # https://github.com/concourse/concourse/releases/download/v7.3.1/concourse-7.3.1-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:576149f37156f08f8150dd1ec4d0c66f1f88e46a
-    # https://github.com/concourse/concourse/releases/download/v7.3.1/concourse-7.3.1-linux-amd64.tgz.sha1
-    linux-amd64: sha1:a7142525327abffbbf35bf074af6f8d4ce9f922e
-    # https://github.com/concourse/concourse/releases/download/v7.3.1/concourse-7.3.1-windows-amd64.zip.sha1
-    windows-amd64: sha1:0312286f67de4fcc8950f25de548141475def508
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.3.1/concourse-7.3.1-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:576149f37156f08f8150dd1ec4d0c66f1f88e46a
+      # https://github.com/concourse/concourse/releases/download/v7.3.1/concourse-7.3.1-linux-amd64.tgz.sha1
+      linux-amd64: sha1:a7142525327abffbbf35bf074af6f8d4ce9f922e
+      # https://github.com/concourse/concourse/releases/download/v7.3.1/concourse-7.3.1-windows-amd64.zip.sha1
+      windows-amd64: sha1:0312286f67de4fcc8950f25de548141475def508
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.3.1/fly-7.3.1-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:4f028ab47e2a52f235900c95f2e8ec670df27cc9
+      # https://github.com/concourse/concourse/releases/download/v7.3.1/fly-7.3.1-linux-amd64.tgz.sha1
+      linux-amd64: sha1:ae695afcb0f5002fe477a65053fa84a027a8422c
+      # https://github.com/concourse/concourse/releases/download/v7.3.1/fly-7.3.1-windows-amd64.zip.sha1
+      windows-amd64: sha1:350f4766ba83e1fc6feb04ba7f402b53ae1c10a2
   '7.4.0':
-    # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:96d610614599a7bf8da48faa8722d3e5f92003d8
-    # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-linux-amd64.tgz.sha1
-    linux-amd64: sha1:833a72e8f2611c91028cc8b3b05f2925752d4fe3
-    # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-windows-amd64.zip.sha1
-    windows-amd64: sha1:7076334e6161a5c6c5bc6c167ff253c379791e72
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:96d610614599a7bf8da48faa8722d3e5f92003d8
+      # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:833a72e8f2611c91028cc8b3b05f2925752d4fe3
+      # https://github.com/concourse/concourse/releases/download/v7.4.0/concourse-7.4.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:7076334e6161a5c6c5bc6c167ff253c379791e72
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.4.0/fly-7.4.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:da7d38f01c99e98f6d430fae9b9f6aed9772a6ce
+      # https://github.com/concourse/concourse/releases/download/v7.4.0/fly-7.4.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:8a6048c50b66dd2d6c7112a0a2291d4f10c6708a
+      # https://github.com/concourse/concourse/releases/download/v7.4.0/fly-7.4.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:62b8b08f818ae8c967e140f350aa1570ba7b6068
   '7.4.1':
-    # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:d90bd9c78561fc32eda566d221f636571d4bdbaa
-    # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-linux-amd64.tgz.sha1
-    linux-amd64: sha1:819cd43902c07ae2da6bed4eb07953438f910231
-    # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-windows-amd64.zip.sha1
-    windows-amd64: sha1:80b1f598423ac43ae3872a26bb9d836ff958cb14
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:d90bd9c78561fc32eda566d221f636571d4bdbaa
+      # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-linux-amd64.tgz.sha1
+      linux-amd64: sha1:819cd43902c07ae2da6bed4eb07953438f910231
+      # https://github.com/concourse/concourse/releases/download/v7.4.1/concourse-7.4.1-windows-amd64.zip.sha1
+      windows-amd64: sha1:80b1f598423ac43ae3872a26bb9d836ff958cb14
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.4.1/fly-7.4.1-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:d51c993660fcea04653b3f4c93db6ea7afb5cbde
+      # https://github.com/concourse/concourse/releases/download/v7.4.1/fly-7.4.1-linux-amd64.tgz.sha1
+      linux-amd64: sha1:139a2bc91c82b3054f8d05aa2d3030e1b3ba0fa7
+      # https://github.com/concourse/concourse/releases/download/v7.4.1/fly-7.4.1-windows-amd64.zip.sha1
+      windows-amd64: sha1:a492e5abd378aecdf9f4199c59421156d7314812
   '7.4.2':
-    # https://github.com/concourse/concourse/releases/download/v7.4.2/concourse-7.4.2-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:85718af62486675ce002bcf247a23719ea4fc104
-    # https://github.com/concourse/concourse/releases/download/v7.4.2/concourse-7.4.2-linux-amd64.tgz.sha1
-    linux-amd64: sha1:791a7115c46406cc396c6ba83082bc8593f7a04d
-    # https://github.com/concourse/concourse/releases/download/v7.4.2/concourse-7.4.2-windows-amd64.zip.sha1
-    windows-amd64: sha1:b650457fa950b7f7294a70dfb2e90562a5cbeb1c
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.4.2/concourse-7.4.2-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:85718af62486675ce002bcf247a23719ea4fc104
+      # https://github.com/concourse/concourse/releases/download/v7.4.2/concourse-7.4.2-linux-amd64.tgz.sha1
+      linux-amd64: sha1:791a7115c46406cc396c6ba83082bc8593f7a04d
+      # https://github.com/concourse/concourse/releases/download/v7.4.2/concourse-7.4.2-windows-amd64.zip.sha1
+      windows-amd64: sha1:b650457fa950b7f7294a70dfb2e90562a5cbeb1c
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.4.2/fly-7.4.2-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:9e162d0d7956ce40a377c6935c1aa2582203e66d
+      # https://github.com/concourse/concourse/releases/download/v7.4.2/fly-7.4.2-linux-amd64.tgz.sha1
+      linux-amd64: sha1:fb2538da26500099fdcfcffa1e638d444929f4c1
+      # https://github.com/concourse/concourse/releases/download/v7.4.2/fly-7.4.2-windows-amd64.zip.sha1
+      windows-amd64: sha1:ea9ab68fac2cac4aecd407a754abdf95c1f73be5
   '7.4.3':
-    # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:45ae23f45916339ed70cfe12cdf373312a9d6275
-    # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-linux-amd64.tgz.sha1
-    linux-amd64: sha1:2839c15ca492e0f78de4dc064d93672f90c254b3
-    # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-windows-amd64.zip.sha1
-    windows-amd64: sha1:dd4761aba1ae20948e1e71a70eb71396aca36806
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:45ae23f45916339ed70cfe12cdf373312a9d6275
+      # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-linux-amd64.tgz.sha1
+      linux-amd64: sha1:2839c15ca492e0f78de4dc064d93672f90c254b3
+      # https://github.com/concourse/concourse/releases/download/v7.4.3/concourse-7.4.3-windows-amd64.zip.sha1
+      windows-amd64: sha1:dd4761aba1ae20948e1e71a70eb71396aca36806
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.4.3/fly-7.4.3-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:6a279f73da5cd08f5e79f8198c79bcfa0ab6d572
+      # https://github.com/concourse/concourse/releases/download/v7.4.3/fly-7.4.3-linux-amd64.tgz.sha1
+      linux-amd64: sha1:e9c02d5a901cf8205fdad390e49d73e88600792a
+      # https://github.com/concourse/concourse/releases/download/v7.4.3/fly-7.4.3-windows-amd64.zip.sha1
+      windows-amd64: sha1:0cb8cd7e77e7f86759d8e26d91866ea1ff9ef832
   '7.5.0':
-    # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:de05cef2e745ab9e6fc7e60b87d7e66cd738f003
-    # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-linux-amd64.tgz.sha1
-    linux-amd64: sha1:fd8712f91d6029765cb5984d771544f876c8ba0c
-    # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-windows-amd64.zip.sha1
-    windows-amd64: sha1:3bb9c0a98bb25d0f22c1e2243992b09ee4b23314
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:de05cef2e745ab9e6fc7e60b87d7e66cd738f003
+      # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:fd8712f91d6029765cb5984d771544f876c8ba0c
+      # https://github.com/concourse/concourse/releases/download/v7.5.0/concourse-7.5.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:3bb9c0a98bb25d0f22c1e2243992b09ee4b23314
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.5.0/fly-7.5.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:2079fd8303c055bb2e438206fa2d5aff59f193bb
+      # https://github.com/concourse/concourse/releases/download/v7.5.0/fly-7.5.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:3fea0f6858baa1e30517fb71ca1a1b0317fe6dfa
+      # https://github.com/concourse/concourse/releases/download/v7.5.0/fly-7.5.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:2396b47fc2fc97543bd8fa97b7313fd0f1307dfd
   '7.6.0':
-    # https://github.com/concourse/concourse/releases/download/v7.6.0/concourse-7.6.0-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:6a953e5855bfa171a2c1f1ffaa3a8ebfb3759598
-    # https://github.com/concourse/concourse/releases/download/v7.6.0/concourse-7.6.0-linux-amd64.tgz.sha1
-    linux-amd64: sha1:cda5b5cc1081ddf0b1bec8bc506b15190cefbe65
-    # https://github.com/concourse/concourse/releases/download/v7.6.0/concourse-7.6.0-windows-amd64.zip.sha1
-    windows-amd64: sha1:d948f5e6b0b308f240f462ea0cf6b99b1a91e725
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.6.0/concourse-7.6.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:6a953e5855bfa171a2c1f1ffaa3a8ebfb3759598
+      # https://github.com/concourse/concourse/releases/download/v7.6.0/concourse-7.6.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:cda5b5cc1081ddf0b1bec8bc506b15190cefbe65
+      # https://github.com/concourse/concourse/releases/download/v7.6.0/concourse-7.6.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:d948f5e6b0b308f240f462ea0cf6b99b1a91e725
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.6.0/fly-7.6.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:29f195cf136dc4820f27e950f92d853c60d03adb
+      # https://github.com/concourse/concourse/releases/download/v7.6.0/fly-7.6.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:c7d331052a6bf552b017adf5288b8e162346157c
+      # https://github.com/concourse/concourse/releases/download/v7.6.0/fly-7.6.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:ff17465907969c50730f64ca11baa846b8c9443b
   '7.7.0':
-    # https://github.com/concourse/concourse/releases/download/v7.7.0/concourse-7.7.0-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:27026aea2827d05ffd44906bd1de894737abacce
-    # https://github.com/concourse/concourse/releases/download/v7.7.0/concourse-7.7.0-linux-amd64.tgz.sha1
-    linux-amd64: sha1:f043d3c5fc1ac8236620eb3a3066076967c96a56
-    # https://github.com/concourse/concourse/releases/download/v7.7.0/concourse-7.7.0-windows-amd64.zip.sha1
-    windows-amd64: sha1:f7a479476bd12b073ffd8d949d326107691ec927
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.7.0/concourse-7.7.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:27026aea2827d05ffd44906bd1de894737abacce
+      # https://github.com/concourse/concourse/releases/download/v7.7.0/concourse-7.7.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:f043d3c5fc1ac8236620eb3a3066076967c96a56
+      # https://github.com/concourse/concourse/releases/download/v7.7.0/concourse-7.7.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:f7a479476bd12b073ffd8d949d326107691ec927
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.7.0/fly-7.7.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:fffc21e2aab482b8fc83c2d78b859e8fc7ba98c4
+      # https://github.com/concourse/concourse/releases/download/v7.7.0/fly-7.7.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:e4ec8b9ca0e867df467cd6f6f037cf7dad400866
+      # https://github.com/concourse/concourse/releases/download/v7.7.0/fly-7.7.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:207e0e0261d115a0fff56ad931abdff6f612b094
   '7.7.1':
-    # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-darwin-amd64.tgz.sha1
-    darwin-amd64: sha1:f4b9b0fb461940a7046fb3eedb25bc159a58ed0e
-    # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-linux-amd64.tgz.sha1
-    linux-amd64: sha1:bd91335c3780d667d5457c8c3525517e0a82940c
-    # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-windows-amd64.zip.sha1
-    windows-amd64: sha1:f1d0c220791384a693b124eedfa509be583b3c75
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:f4b9b0fb461940a7046fb3eedb25bc159a58ed0e
+      # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-linux-amd64.tgz.sha1
+      linux-amd64: sha1:bd91335c3780d667d5457c8c3525517e0a82940c
+      # https://github.com/concourse/concourse/releases/download/v7.7.1/concourse-7.7.1-windows-amd64.zip.sha1
+      windows-amd64: sha1:f1d0c220791384a693b124eedfa509be583b3c75
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.7.1/fly-7.7.1-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:7ff25e5d3209c4b0faab5a2f83d486a82ae0e25c
+      # https://github.com/concourse/concourse/releases/download/v7.7.1/fly-7.7.1-linux-amd64.tgz.sha1
+      linux-amd64: sha1:edd75712d9e0b9c927c972df0a8a9a7405c2650c
+      # https://github.com/concourse/concourse/releases/download/v7.7.1/fly-7.7.1-windows-amd64.zip.sha1
+      windows-amd64: sha1:bac240da338dc0d27a501cdcf8af21a52eb6e26d
