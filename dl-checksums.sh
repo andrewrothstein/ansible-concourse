@@ -30,22 +30,4 @@ dl_ver () {
 
 }
 
-dl_ver 5.5.11
-dl_ver 6.3.0
-dl_ver 6.4.1
-dl_ver 6.7.2
-dl_ver 6.7.3
-dl_ver 6.7.4
-dl_ver 6.7.5
-dl_ver 6.7.6
-dl_ver 6.7.7
-dl_ver 6.7.8
-dl_ver 7.3.1
-dl_ver 7.4.0
-dl_ver 7.4.1
-dl_ver 7.4.2
-dl_ver 7.4.3
-dl_ver 7.5.0
-dl_ver 7.6.0
-dl_ver 7.7.0
-dl_ver ${1:-7.7.1}
+dl_ver ${1:-7.8.0}
