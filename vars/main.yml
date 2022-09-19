@@ -1,0 +1,3 @@
+---
+concourse_os: '{{ ansible_system | lower }}'
+concourse_arch: '{{ concourse_arch_map[ansible_architecture] }}'
