@@ -1,6 +1,6 @@
 ---
 # defaults file for concourse
-concourse_ver: 7.8.2
+concourse_ver: 7.9.0
 concourse_mirror: https://github.com/concourse/concourse/releases/download
 
 concourse_arch_map:
@@ -327,3 +327,18 @@ concourse_checksums:
       linux-amd64: sha1:c2d0b3693ba342af8191a89f9f8525ada0fff8e0
       # https://github.com/concourse/concourse/releases/download/v7.8.2/fly-7.8.2-windows-amd64.zip.sha1
       windows-amd64: sha1:6194a1eb80909bb5734df568ae620877ba57fdb0
+  '7.9.0':
+    concourse:
+      # https://github.com/concourse/concourse/releases/download/v7.9.0/concourse-7.9.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:6fde2ac5ffa11ae463cb325f9d8f545f09859a26
+      # https://github.com/concourse/concourse/releases/download/v7.9.0/concourse-7.9.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:9acb3192cf287f14f435117a473017153d69c30b
+      # https://github.com/concourse/concourse/releases/download/v7.9.0/concourse-7.9.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:74a8e039a25c50751da19cbe7a6b31fd1f35f2be
+    fly:
+      # https://github.com/concourse/concourse/releases/download/v7.9.0/fly-7.9.0-darwin-amd64.tgz.sha1
+      darwin-amd64: sha1:f6a3bc4de941a38b2cc35f34eaa92cca18f2b73d
+      # https://github.com/concourse/concourse/releases/download/v7.9.0/fly-7.9.0-linux-amd64.tgz.sha1
+      linux-amd64: sha1:df51146d6f8ba39c9fe01783f3100bfb1bc3925c
+      # https://github.com/concourse/concourse/releases/download/v7.9.0/fly-7.9.0-windows-amd64.zip.sha1
+      windows-amd64: sha1:6a3249c39548576c9367afc1577d1a56252c8c2d
