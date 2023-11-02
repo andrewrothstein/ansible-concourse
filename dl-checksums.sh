@@ -13,7 +13,7 @@ dl()
     local platform="${os}-${arch}"
     local url=$MIRROR/v${ver}/${app}-${ver}-${platform}.${archive_type}.sha1
     printf "      # %s\n"  $url
-    printf "      %s: sha1:%s\n" $platform $(curl -SsL $url | awk '{print $1}')
+    printf "      %s: sha1:%s\n" $platform $(curl -SsLf $url | awk '{print $1}')
 }
 
 dl_ver () {
@@ -30,4 +30,4 @@ dl_ver () {
 
 }
 
-dl_ver ${1:-7.10.0}
+dl_ver ${1:-7.11.0}
