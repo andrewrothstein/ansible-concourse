@@ -16,6 +16,7 @@
         url: '{{ concourse_url }}'
         dest: '{{ concourse_tmp_archive }}'
         mode: 0644
+        timeout: '{{ concourse_dl_timeout | default(600) }}'
         checksum: '{{ concourse_checksum }}'
     - name: mkdir {{ concourse_install_dir }}
       become: true

@@ -6,6 +6,9 @@ concourse_mirror: https://github.com/concourse/concourse/releases/download
 concourse_arch_map:
   x86_64: amd64
 
+# download timeout
+# concourse_dl_timeout: 600
+
 concourse_apps:
   - concourse
   - fly
