@@ -1,7 +1,7 @@
 ---
 - name: Executing 'concourse --version'
   ansible.builtin.command: /usr/local/bin/concourse --version
-  changed_when: False
+  changed_when: false
   register: concourse_test_output
 - name: Output of 'concourse --version'
   ansible.builtin.debug:
