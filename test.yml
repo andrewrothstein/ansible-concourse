@@ -1,23 +1,33 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.concourse (fly)
+  hosts: all
   vars:
     concourse_apps:
       - fly
-  roles:
-    - role: '{{ playbook_dir }}'
   tasks:
-    - include_tasks: test-fly.yml
-- hosts: all
+    - name: Installing andrewrothstein.concourse (fly)
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Testing fly
+      ansible.builtin.include_tasks: test-fly.yml
+- name: Testing andrewrothstein.concourse (concourse)
+  hosts: all
   vars:
     concourse_apps:
       - concourse
-  roles:
-    - role: '{{ playbook_dir }}'
   tasks:
-    - include_tasks: test-concourse.yml
-- hosts: all
-  roles:
-    - role: '{{ playbook_dir }}'
+    - name: Installing andrewrothstein.concourse (concourse)
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Testing concourse
+      ansible.builtin.include_tasks: test-concourse.yml
+- name: Testing andrewrothstein.concourse
+  hosts: all
   tasks:
-    - include_tasks: test-fly.yml
-    - include_tasks: test-concourse.yml
+    - name: Installing andrewrothstein.concourse
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Testing fly
+      ansible.builtin.include_tasks: test-fly.yml
+    - name: Testing concourse
+      ansible.builtin.include_tasks: test-concourse.yml

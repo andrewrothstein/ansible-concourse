@@ -1,6 +1,8 @@
 ---
-- command: /usr/local/bin/fly --version
+- name: Executing 'fly --version'
+  ansible.builtin.command: /usr/local/bin/fly --version
+  changed_when: false
   register: fly_test_output
-- name: fly --version
-  debug:
+- name: Output of 'fly --version'
+  ansible.builtin.debug:
     msg: '{{ fly_test_output.stdout }}'
