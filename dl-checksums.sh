@@ -21,11 +21,15 @@ dl_ver () {
     printf "  '%s':\n" $ver
     printf "    %s:\n" concourse
     dl $ver concourse darwin amd64
+    dl $ver concourse darwin arm64
     dl $ver concourse linux amd64
+    dl $ver concourse linux arm64
     dl $ver concourse windows amd64 zip
     printf "    %s:\n" fly
     dl $ver fly darwin amd64
+    dl $ver fly darwin arm64
     dl $ver fly linux amd64
+    dl $ver fly linux arm64
     dl $ver fly windows amd64 zip
 
 }
